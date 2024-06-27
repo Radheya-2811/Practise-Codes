@@ -13,6 +13,14 @@
     console.log(div);
     div.className="main";
     div.id=Math.round(Math.random*10+1)
-    
+    div.setAttribute('title','new title')
+    div.style.backgroundColor="red"
+    div.style.padding="4rem"
+    const addText=document.createTextNode("HEllo Inserting Text...")
+    div.appendChild(addText);
+    console.log(addText);
+
+    document.body.appendChild(div)
+     
 </script>
 </html>
