@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+</head>
+<body>
+    <form action="" id="form1">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <script>
+        function submitForm() {
+            const email=document.getElementById('email').value;
+            email.innerHtml="dubeyh1414@gmail.cpm"
+            const birthday=document.getElementById('birthday').value
+            console.log(`Email: ${email},Birthday: ${birthday}`);
+
+        }
+    </script>
+</body>
+</html>
